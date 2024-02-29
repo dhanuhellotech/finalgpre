@@ -48,7 +48,7 @@ app.use('/classes',classRoutes)
 // MongoDB connection
 mongoose.connect(
   "mongodb+srv://dhanalakshmihellotech:lbXKBJugIDBkvIrG@cluster0.vzg4i8n.mongodb.net/Gpreschool_local",
-  { useNewUrlParser: true, useUnifiedTopology: true }
+
 ).then(() => {
   console.log('Connected to MongoDB');
 });
