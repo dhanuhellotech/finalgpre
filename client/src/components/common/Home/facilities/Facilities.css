@@ -1,0 +1,26 @@
+/* Facilities.css */
+
+
+  
+@media screen and (max-width: 800px) {
+    .facilities-slider {
+
+    
+      /* Hide the slider */
+    }
+    
+    .facility-item {
+      width: 100%; /* Set width to 100% */
+      height: auto; /* Set height to auto */
+      margin-bottom: 20px; /* Add some bottom margin for spacing */
+    }
+    
+    .facility-icon {
+      display: none; /* Hide the facility icons */
+    }
+  
+    .facility-text {
+      display: block; /* Display the facility text */
+    }
+    
+  }

@@ -1,0 +1,27 @@
+TestimonialCard.css
+
+.testimonial-slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.testimonial-card {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #FF6347 100%);
+  color:black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.testimonial-author {
+  margin-top: 20px;
+  font-size: 16px;
+}

@@ -1,0 +1,51 @@
+/* ParentsCorner.css */
+
+.parent-corner-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-section-parent {
+    width: 30%; /* Adjust as needed */
+  }
+  
+  .right-section-parent {
+    width: 65%; /* Adjust as needed */
+  }
+  
+  /* Add additional styles for SearchBox and RecentPosts */
+  .left-section-parent .search-box {
+    /* Your styles for the search box go here */
+  }
+  
+  .left-section-parent .recent-posts {
+    /* Your styles for recent posts go here */
+  }
+  /* Regular styles for larger screens */
+
+.container-xxl {
+  /* Your regular styles for larger screens */
+}
+
+/* Media query for screens with a maximum width of 400 pixels */
+@media screen and (max-width: 400px) {
+  /* Styles for screens with a maximum width of 400 pixels */
+
+  .container-xxl {
+    /* Adjust styles for smaller screens */
+  }
+
+  .parent-corner-container {
+    display: flex;
+    flex-direction: column;
+    /* Adjust layout for smaller screens, e.g., switch to a column layout */
+  }
+
+  .left-section-parent,
+  .right-section-parent {
+    width: 100%;
+    /* Adjust width for smaller screens */
+  }
+
+  /* Add more styles as needed for smaller screens */
+}

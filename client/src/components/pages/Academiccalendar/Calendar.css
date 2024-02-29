@@ -1,0 +1,177 @@
+/* MonthCalendar.css */
+
+/* Reset */
+
+  
+  /* Calendar */
+  #title {
+    margin: auto;
+    flex-direction: column;
+  }
+  
+  #title > h1 {
+    font-size: 5vw;
+  }
+  
+  #title > p {
+    font-size: 2vw;
+  }
+  
+  .calendar-frame {
+    padding: 1vw;
+    width: 80vw;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  /* Add this CSS to Calendar.css */
+
+.calendar-frame {
+    padding: var(--dim2);
+    width: 84vw;
+    margin: auto;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+    gap: var(--dim2); /* Add gap between day frames */
+  }
+  
+  .day-frame {
+    height: var(--dim1);
+    /* Remove margin */
+  }
+  
+  /* Ad/* Add this CSS to Calendar.css */
+
+.calendar-frame {
+    padding: var(--dim2);
+    width: 84vw;
+    margin: auto;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+    gap: var(--dim2); /* Add gap between day frames */
+  }
+  /* Add this CSS to Calendar.css */
+
+.calendar-container {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .calendar-container.active {
+    display: block;
+    transform: translateX(0%);
+  }
+  
+  .calendar-container:not(.active) {
+    position: absolute;
+    left: 100%;
+    overflow: hidden;
+  }
+  
+  .day-frame {
+    height: var(--dim1);
+    /* Remove margin */
+  }
+  
+  /* Adjust the width of each day frame to fit the grid */
+  .day-frame.center.real {
+    width: calc((84vw - 6 * var(--dim2)) / 7); /* Adjust the width based on the grid and gap */
+  }
+  just the width of each day frame to fit the grid */
+  .day-frame.center.real {
+    width: calc((84vw - 6 * var(--dim2)) / 7); /* Adjust the width based on the grid and gap */
+  }
+  
+  .day-frame {
+    margin: 0.5vw;
+    height: 10vw;
+    width: 10vw;
+    background-color: #ccc; /* Default background color */
+  }
+  
+  .day-number {
+    font-size: 4vw;
+  }
+  
+  .day-label {
+    font-size: 1.5vw;
+  }
+  /* MonthCalendar.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.05s ease-in;
+}
+
+/* Calendar */
+#title {
+    margin: auto;
+    flex-direction: column;
+}
+
+#title > h1 {
+    font-size: 5vw;
+}
+
+#title > p {
+    font-size: 2vw;
+}
+
+.calendar-frame {
+    padding: 1vw;
+    width: 80vw;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Adjusted Calendar Styles */
+.calendar-frame {
+    padding: var(--dim2);
+    width: 80vw; /* Adjust the width of the calendar */
+    margin: auto;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(7, 2fr); /* 7 columns for each day of the week */
+    gap: var(--dim2); /* Add gap between day frames */
+}
+
+.day-frame {
+    margin: 0.5vw; /* Adjust the margin */
+    height: 8vw; /* Adjust the height of each day frame */
+    width: 8vw; /* Adjust the width of each day frame */
+    background-color: #ccc; /* Default background color */
+}
+
+/* Adjust the font sizes */
+.day-number {
+    font-size: 3vw; /* Adjust the font size of the day number */
+}
+
+.day-label {
+    font-size: 1.2vw; /* Adjust the font size of the day label */
+}
+
+.real {
+    background-size: cover;
+    color: white;
+}
+
+/* Specific day styles */
+#one {
+    background-image: url("https://example.com/day-one-image.jpg");
+}
+
+/* Add styles for other days */
+
+  .real {
+    background-size: cover;
+    color: white;
+  }
+  
+  /* Specific day styles */
+  #one {
+    background-image: url("https://example.com/day-one-image.jpg");
+  }
+  
+  /* Add styles for other days */
+  

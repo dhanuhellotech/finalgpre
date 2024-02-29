@@ -1,0 +1,30 @@
+/* banner.css */
+
+/* Default styles for container */
+
+
+/* Media query for smaller screens (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .container {
+    background-image: none; /* Remove background image */
+  }
+
+  .row {
+    margin-bottom: 30px; /* Add some spacing between rows */
+  }
+  .img-new{
+display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    background-image: none; /* Remove background image */
+  }
+
+  .row {
+    margin-bottom: 30px; /* Add some spacing between rows */
+  }
+  .img-new{
+display: none;
+  }
+}

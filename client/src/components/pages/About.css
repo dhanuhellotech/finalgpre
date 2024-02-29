@@ -1,0 +1,41 @@
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fff; /* Set your desired background color */
+    border-radius: 50%;
+    margin: 10px; /* Adjust margin as needed */
+  }
+  
+  .icon-circle i {
+    font-size: 24px; /* Adjust icon size as needed */
+    color: #333; /* Set your desired icon color */
+  }
+  .card  {
+    background-color:#FE6440;
+    color: white;
+  }
+  .card h5{
+    color: white;
+  }
+  @media screen and (max-width: 1190px) {
+    p {
+      /* Your styles for <p> tag on smaller screens */
+      font-size: 16px; /* Example: reducing font size for smaller screens */
+    }
+    img{
+      height: auto;
+      width: 90%;
+    }
+
+  }
+
+  @media screen and (min-width: 700px) {
+    .col-lg-6.float-lg-start .img-fluid {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

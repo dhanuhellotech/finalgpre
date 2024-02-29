@@ -1,0 +1,253 @@
+import React from 'react'
+import Navbar from '../common/Navbar'
+import Footer from '../common/Footer'
+export default function Contact() {
+  return (
+  
+<div className="container-xxl bg-white p-0">
+  {/* Spinner Start */}
+  {/* <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div className="spinner-border text-primary" style={{width: '3rem', height: '3rem'}} role="status">
+      <span className="sr-only">Loading...</span>
+    </div>
+  </div> */}
+  {/* Spinner End */}
+  {/* Navbar Start */}
+<Navbar/>
+  {/* Navbar End */}
+  {/* Page Header End */}
+  <div className="container-xxl py-5 page-header position-relative mb-5">
+    <div className="container py-5">
+      <h1 className="display-2 text-white animated slideInDown mb-4">Contact Us</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item"><a href="#">Home</a></li>
+          <li className="breadcrumb-item"><a href="#">Pages</a></li>
+          <li className="breadcrumb-item text-white active" aria-current="page">Contact Us</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  {/* Page Header End */}
+  {/* Contact Start */}
+  <div className="container-xxl py-5">
+    <div className="container">
+      <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{maxWidth: 600}}>
+        <h1 className="mb-3">Get In Touch</h1>
+        <p>We're thrilled that you've made your way to our contact page! Your thoughts, questions, and feedback are important to us, and we're here to make sure your experience with us is exceptional.</p>
+      </div>
+      <div className="row g-4 mb-5">
+        <div className="col-md-6 col-lg-4 text-center wow fadeInUp" data-wow-delay="0.1s">
+          <div className="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: 75, height: 75}}>
+            <i className="fa fa-map-marker-alt fa-2x text-primary" />
+          </div>
+          <h6>
+No 3, 1st cross street, Duraisamy nagar, bypass road, Madurai - 625010</h6>
+        </div>
+        <div className="col-md-6 col-lg-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+          <div className="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: 75, height: 75}}>
+            <i className="fa fa-envelope-open fa-2x text-primary" />
+          </div>
+          <h6>thegpreschool@gmail.com</h6>
+        </div>
+        <div className="col-md-6 col-lg-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+          <div className="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{width: 75, height: 75}}>
+            <i className="fa fa-phone-alt fa-2x text-primary" />
+          </div>
+          <h6>6374970664</h6>
+        </div>
+      </div>
+      <div className="bg-light rounded">
+        <div className="row g-0">
+          <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div className="h-100 d-flex flex-column justify-content-center p-5">
+              <p className="mb-4">Enquiry form</p>
+              <form>
+                <div className="row g-3">
+                  <div className="col-sm-6">
+                    <div className="form-floating">
+                      <input type="text" className="form-control border-0" id="name" placeholder="Your Name" />
+                      <label htmlFor="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div className="col-sm-6">
+                    <div className="form-floating">
+                      <input type="email" className="form-control border-0" id="email" placeholder="Your Email" />
+                      <label htmlFor="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div className="col-12">
+                    <div className="form-floating">
+                      <input type="text" className="form-control border-0" id="subject" placeholder="Subject" />
+                      <label htmlFor="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div className="col-12">
+                    <div className="form-floating">
+                      <textarea className="form-control border-0" placeholder="Leave a message here" id="message" style={{height: 100}} defaultValue={""} />
+                      <label htmlFor="message">Message</label>
+                    </div>
+                  </div>
+                  <div className="col-12">
+                    <button className="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style={{minHeight: 400}}>
+            <div className="position-relative h-100">
+              <iframe className="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd" frameBorder={0} style={{minHeight: 400, border: 0}} allowFullScreen aria-hidden="false" tabIndex={0} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* Contact End */}
+  {/* Footer Start */}
+ <Footer/>
+  {/* Footer End */}
+  {/* Back to Top */}
+  <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="bi bi-arrow-up" /></a>
+</div>
+
+
+  )
+}
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import sumiimg from '../../../../assets/sumimam.jpg';
+import './About.css';
+
+export default function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 200,
+    });
+  }, []);
+
+  return (
+    <div className="about-container">
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6 about-img" data-aos="fade-right" data-aos-delay="500">
+              <div className="row">
+                <div className="col-12 text-center">
+                  <div className="mask-container">
+                    <video className="video-fluid w-50 bg-light p-3 masked-video" autoPlay loop muted>
+                      <source src="assets/img/curriculum/currivideo.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <h1 className="mb-5">Developmental Milestones</h1>
+              <p className="mb-4" style={{fontFamily:'sans-serif',fontSize:'23px',fontWeight:'bold'}}>Developmental Milestones are markers to measure a child's growth in areas of cognitive development, motor skills development, language development and socio-emotional development. They help us in understanding how children develop and differ from one another in their growth patterns. Milestones support the understanding that every child is unique and develops at his/her own pace. Natural development milestones are helpful in selecting the best age appropriate programs and activities for children.</p>
+              <div className="row g-4 align-items-center">
+                <div className="col-sm-6">
+                  <a className="btn btn-primary rounded-pill py-3 px-5" href="/">
+                    Read More
+                  </a>
+                </div>
+                <div className="col-sm-6">
+                  <div className="d-flex align-items-center">
+                    <img className="rounded-circle flex-shrink-0" src={sumiimg} alt="" style={{ width: 45, height: 45 }} />
+                    <div className="ms-3">
+                      <h6 className="text-primary mb-1">Sumi Mam</h6>
+                      <small>CEO & Founder</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+About.css */
+
+.about-img,
+.col-lg-6 {
+  opacity: 0; /* Start with elements hidden */
+}
+
+.about-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-img.wow.fadeInLeft,
+.col-lg-6.wow.fadeInRight {
+  animation: fadeIn 1s forwards; /* Animation duration and fill-mode */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Initial position for sliding animation */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Final position for sliding animation */
+  }
+}
+
+/* Add any additional styling based on your design preferences */
+blog/
+
+import React from 'react';
+
+
+const blogPosts = [
+  {
+    id: 1,
+    title: 'Understanding Child Psychology',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+  },
+  {
+    id: 2,
+    title: 'Importance of Outdoor Activities for Kids',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+  },
+  // Add more blog posts as needed
+];
+
+const BlogPage = () => {
+  return (
+    <div>
+
+
+      <div className="container mt-5">
+        <h2 className="text-center mb-4">Parent's Corner - Blogs</h2>
+
+        <div className="row">
+          {blogPosts.map((post) => (
+            <div key={post.id} className="col-md-6 mb-4">
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">{post.title}</h5>
+                  <p className="card-text">{post.content}</p>
+                  <a href={`/blog/${post.id}`} className="btn btn-primary">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+    </div>
+  );
+};
+
+export default BlogPage;

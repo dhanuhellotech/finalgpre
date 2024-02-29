@@ -1,0 +1,20 @@
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.15); /* Background color with transparency */
+    backdrop-filter: blur(14px); /* Apply blur effect */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Add padding for spacing */
+  }
+  .glassmorphism-input {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+
+  
+ 

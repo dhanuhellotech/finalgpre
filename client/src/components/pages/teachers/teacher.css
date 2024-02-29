@@ -1,0 +1,10 @@
+@media (max-width: 400px) {
+    .col-md-6.col-sm-6 img {
+      display: none;
+    }
+  }
+  /* .img-responsive{
+    width: 100%;
+    height: auto;
+  }
+   */

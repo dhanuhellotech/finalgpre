@@ -1,0 +1,20 @@
+/* SearchBox.css */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    /* Adjust as needed */
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Adjust as needed */
+  }
+  
+  /* Add any additional styles based on your design */
+  

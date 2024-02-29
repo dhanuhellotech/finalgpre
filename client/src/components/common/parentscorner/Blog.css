@@ -1,0 +1,82 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+
+.custom-parent-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-top: 15px;
+  }
+  
+  .custom-parent-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .custom-parent-card-img-wrapper {
+    width: 100%;
+
+    object-fit: cover;
+    display: block;
+    max-height: 500px; /* Adjust the maximum height as needed */
+    overflow: hidden; /* Hide any overflow to ensure the image does not extend beyond the specified height */
+  }
+  
+  .custom-parent-card-img-top {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .custom-parent-card-body {
+    padding: 15px;
+  }
+  
+  .custom-parent-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .custom-parent-card-text {
+    margin-bottom: 15px;
+  }
+  
+  .custom-parent-card-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+  }
+  
+  .custom-parent-card-category a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .custom-parent-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .custom-parent-author {
+    font-size: 0.875rem;
+    color: #555;
+  }
+  
+  .custom-parent-comments-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .btn-custom-parent-primary {
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  .btn-custom-parent-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  

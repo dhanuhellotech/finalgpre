@@ -1,0 +1,29 @@
+/* About.css */
+
+.about-img,
+.col-lg-6 {
+  opacity: 0; /* Start with elements hidden */
+}
+
+.about-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-img.wow.fadeInLeft,
+.col-lg-6.wow.fadeInRight {
+  animation: fadeIn 1s forwards; /* Animation duration and fill-mode */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Initial position for sliding animation */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Final position for sliding animation */
+  }
+}
+
+/* Add any additional styling based on your design preferences */

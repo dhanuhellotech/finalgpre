@@ -1,0 +1,278 @@
+/* BannerAndAdmissionForm.css */
+
+
+  .banner {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+  }
+  
+  .admission-form {
+    flex: 1;
+    padding: 20px;
+    background-color: lightgreen;
+  }
+  
+  /* Style your form elements as needed */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  /* Admission.css */
+  /* @keyframes slide {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(-25%) translateY(25%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(0);
+  }
+  75% {
+    transform: translateX(-25%) translateY(-25%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+} */
+
+
+
+.train-track {
+  position: relative;
+  width: 100%;
+  height: 100px; /* Adjust the height as needed */
+  background-color: #9e9e9e; /* Gray color for the track */
+}
+
+.train-track:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the track */
+  background-color: #000; /* Black color for the track */
+  transform: translateY(-50%);
+}
+.train-container {
+    overflow: hidden;
+  }
+  
+  .col {
+    animation: slide 10s infinite;
+  }
+  
+  .train-card {
+    position: relative;
+    background-color: #00b5bb;
+    padding: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .train-body {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-title {
+    margin-bottom: 10px;
+  }
+  
+  .train-wheel {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #FE5D37;
+    border-radius: 50%;
+    bottom: -25px;
+  }
+  
+  .train-wheel:nth-child(1) {
+    left: 20px;
+  }
+  
+  .train-wheel:nth-child(2) {
+    right: 20px;
+  }
+  
+/* .card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-title {
+    color: #FE5D37;
+  }
+  
+  .card-text {
+    color: #FE5D37;
+  }
+   */
+.card-text{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+  
+  input {
+    margin-bottom: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  .box {
+    --size: 40px;
+    --p: 45px;
+    --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
+    
+    height: 900px;
+    margin: 20px 0;
+    
+    
+  -webkit-mask:
+    radial-gradient(var(--R) at left 50% bottom calc(var(--size) + var(--p)),#000 99%,#0000 101%) 
+     left calc(50% - 2*var(--size)) bottom 0/calc(4*var(--size)) 51% repeat-x,
+    radial-gradient(var(--R) at left 50% bottom calc(-1*var(--p)),#ffffff00 99%,#000 101%) 
+     left 50% bottom var(--size)/calc(4*var(--size)) calc(51% - var(--size)) repeat-x,
+    radial-gradient(var(--R) at left 50% top calc(var(--size) + var(--p)),#000 99%,#0000 101%) 
+     left calc(50% - 2*var(--size)) top 0/calc(4*var(--size)) 51% repeat-x,
+    radial-gradient(var(--R) at left 50% top calc(-1*var(--p)),#0000 99%,#000 101%) 
+     left 50% top var(--size)/calc(4*var(--size)) calc(51% - var(--size)) repeat-x;
+    background:linear-gradient(90deg,red,blue);  
+    border: none;
+  }
+  
+  .box + .box {
+    --d: bottom;
+  }
+  /* TestimonialCard.css */
+
+.testimonial-slider-container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .testimonial-card {
+    background: linear-gradient(180deg, #FFA07A 0%, #FF6347 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .testimonial-author {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+/* Add this to your CSS file */
+.h1-p-container { margin-bottom: 30px; }
+
+
+
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 767px) {
+  /* Adjust styles for screens up to 767 pixels wide */
+  .parallax-section {
+    background-attachment: scroll; /* Disable parallax effect on small screens */
+  }
+
+  /* Example styles for the admission form on small screens */
+  .appointment-form {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  /* Example styles for the card container on small screens */
+  .card-container {
+    margin: 0; /* Remove margin for small screens */
+  }
+
+  /* Example styles for the video in the card on small screens */
+  .masked-video {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+
+/* Admission.css */
+
+/* ... (Your existing CSS) */
+
+
+
+  /* New media query for box and container para */
+  @media only screen and (min-width: 470px) {
+    .box {
+      --size: 30px; /* Example size for screens below 470 pixels */
+      --p: 35px; /* Example p value for screens below 470 pixels */
+      --R: 40.9px; /* Example R value for screens below 470 pixels */
+
+      height: 600px; /* Example height for screens below 470 pixels */
+      margin: 5px 0; /* Example margin for screens below 470 pixels */
+    }
+
+    .para {
+      font-size: 16px; /* Example font size for screens below 470 pixels */
+      line-height: 1.5; /* Example line height for screens below 470 pixels */
+      padding-bottom: 20px; /* Example padding for screens below 470 pixels */
+      /* background-color: lightgray;
+       Example background color for screens below 470 pixels */
+    }
+    .para h1{
+      color: black;
+    }
+  
+    label {
+      margin-bottom: 8px;
+    }
+  }
+}
+@media only screen and (max-width: 470px) {
+  .box {
+    --size: 30px; /* Example size for screens below 470 pixels */
+    --p: 35px; /* Example p value for screens below 470 pixels */
+    --R: 40.9px; /* Example R value for screens below 470 pixels */
+
+    height: 600px; /* Example height for screens below 470 pixels */
+    margin: 5px 0; /* Example margin for screens below 470 pixels */
+  }
+
+  .para {
+    font-size: 16px; /* Example font size for screens below 470 pixels */
+    line-height: 1.5; /* Example line height for screens below 470 pixels */
+    padding-bottom: 20px; /* Example padding for screens below 470 pixels */
+    /* background-color: lightgray;  */
+    
+    /* Example background color for screens below 470 pixels */
+  }
+  .para h1{
+    color: black;
+  }
+
+  label {
+    margin-bottom: 8px;
+  }
+}
+

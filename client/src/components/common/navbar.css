@@ -1,0 +1,13 @@
+
+  /* Default styles for the logo image */
+.navbar-brand img {
+    width: 65%;
+}
+
+/* Media query for screens with a maximum width of 1000 pixels */
+@media (max-width: 1000px) {
+    .navbar-brand img {
+        /* Adjust the width of the image as needed */
+        width: 50%; /* You can adjust this value */
+    }
+}

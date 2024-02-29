@@ -1,0 +1,42 @@
+.circular-card {
+    background-color:#FE7353 ; /* Choose your desired background color */
+    border-radius: 50%; /* Make it a perfect circle */
+    width: 150px; /* Set the width as needed */
+    height: 150px; /* Set the height as needed */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto; /* Center the circle */
+  }
+  .text-head{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+
+  }
+  .circular-card p{
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-weight: 600;
+  }
+  .card-text {
+    color: #000000; /* Set the text color */
+    font-size: 16px; /* Adjust the font size as needed */
+    margin: 0; /* Remove any default margin */
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .circular-card {
+      width: 50%; /* Make it full width */
+      margin: 10px auto; 
+
+      
+      /* Adjust margin for spacing */
+    }
+    .containerStyle{
+margin-top: 50px;
+    }
+  }
+  
