@@ -12,7 +12,7 @@ const {Addmission }=require('./Models/Enquiry')
 // Importing routers and middlewares
 const router = require('./Router/Router');
 const blogRoutes = require('./Router/blogRoutes');
-// const eventRoutes  = require('./Router/eventRoutes');
+const eventRoutes  = require('./Router/eventRoutes');
 const addressRoutes = require('./Router/addressRoutes');
 const userRoutes = require('./Router/userRoutes');
 const calendarPdfRouter = require('./Router/calendarPdfRoute');
@@ -36,7 +36,7 @@ app.use('/calendar-pdf', calendarPdfRouter);
 app.use('/api', addressRoutes);
 app.use('/top',topbarRoutes);
 app.use('/time', timetableRoutes);
-// app.use('/events', eventRoutes);
+app.use('/events', eventRoutes);
 
 // blog
 

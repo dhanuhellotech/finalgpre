@@ -1,4 +1,4 @@
-const Event = require('../models/Event');
+const Event = require('../Models/Event');
 const multer = require('../middlewares/upload');
 
 // Middleware to handle image upload
