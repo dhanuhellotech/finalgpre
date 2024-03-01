@@ -12,10 +12,11 @@ export default function Navbar() {
     fetchTobbar();
   }, []);
 
-  const fetchTobbar = () => {
-    client.get('/top')
-      .then(response => setTobbar(response.data))
+  const fetchTobbar = async() => {
+  await  client.get('/top')
+      .then(response =>setTobbar(response.data))
       .catch(error => console.error('Error fetching tobbar:', error));
+      
   };
 
   return (
@@ -26,8 +27,8 @@ export default function Navbar() {
   
         {tobbar.map(entry => (
           <div key={entry._id} style={{ display: 'flex',flexDirection:'row', flexWrap:'wrap', alignItems: 'center',justifyContent:'space-between',width:'100%' }}>
-            <span style={{  }}><i className="fa fa-phone-alt me-3 text-white" /> {entry.number}</span>
-            <span ><FaMapMarkerAlt /> {entry.location}</span>
+            <span style={{  }}><i className="fa fa-phone-alt me-3 text-white" />{entry.number}</span>
+            <span ><FaMapMarkerAlt />{entry.location}</span>
             <span key={entry._id} to="/admission" className="btn btn-primary rounded-pill btn-md me-3  h1">School Open Timing: {entry.schoolOpenTiming}</span>
           </div>
         ))}

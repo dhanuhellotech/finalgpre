@@ -126,11 +126,11 @@ async function  sendAdmissionEmail(formData) {
       Gender: ${formData.gender}
       Grade Applying For: ${formData.gradeApplyingFor}
       Preferred Start Date: ${formData.preferredStartDate}
-      Additional Comments: ${formData.additionalComments || 'N/A'}
+      Additional Comments: ${formData.questionsComments || 'N/A'}
     `;
     const mailOptions = {
       from: ' ',
-      to: 'thegpreschool@gmail.com ', // Replace with recipient email address
+      to: 'thegpreschool@gmail.com', // Replace with recipient email address
       subject: 'New Admission Form Submission',
       text: `Form Details:\n${formDetails}`
     };
@@ -168,7 +168,7 @@ async function sendContactEmail(formData) {
   try {
     const mailOptions = {
       from: '',
-      to: 'dhanalakshmihellotech@gmail.com', // Replace with recipient email address
+      to: 'thegpreschool@gmail.com', // Replace with recipient email address
       subject: 'New Contact Form Submission',
       text: `Form Details:\nUsername: ${formData.username}\nEmail: ${formData.email}\nLocation: ${formData.location}\nMobile: ${formData.mobile}\nCity: ${formData.City}\nComments: ${formData.Comments}`
     };
@@ -240,7 +240,7 @@ async function sendEmail(formData) {
   try {
     const mailOptions = {
       from: '',
-      to: 'dhanalakshmihellotech@gmail.com', // Replace with recipient email address
+      to: 'thegpreschool@gmail.com', // Replace with recipient email address
       subject: 'New Enquiry Form Submission',
       text: `Form Details:\nUsername: ${formData.username}\nEmail: ${formData.email}\nstate: ${formData.state}\nAddress: ${formData.Address}\nMobile: ${formData.mobile}\nchildname: ${formData.childname}\nchildgrade: ${formData.childgrade}\nmessage: ${formData.message}`
     };
